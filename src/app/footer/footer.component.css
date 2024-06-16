@@ -1,20 +1,19 @@
 /** footer */
-.footer{
-    width:100%;
+.footer {
+    width: 100%;
     justify-content: center;
     padding: 20px 0;
-
+    box-shadow: 0 -5px 5px -5px black; /* Añadido sombreado superior */
 }
 
-.span-footer{
+.span-footer {
     display: flex;
     justify-content: space-evenly;
 }
 
-.link-footer{
+.link-footer {
     color: black;
     display: flex;
     justify-content: space-evenly;
     text-decoration: none;
-
 }
