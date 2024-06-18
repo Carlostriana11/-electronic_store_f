@@ -7,17 +7,20 @@ import { CoupensComponent } from './pages.nav/coupens/coupens.component';
 import { PagesComponent } from './pages.nav/pages/pages.component';
 import { MediaComponent } from './pages.nav/media/media.component';
 import { SettingsComponent } from './pages.nav/settings/settings.component';
+import { ProductDeatailComponent } from './product-deatail/product-deatail.component';
 
 const routes: Routes = [
 
-  {path: '', redirectTo: 'dashboard', pathMatch: 'full'}, 
+ 
   {path: 'dashboard', component: DashboardComponent},
   {path: 'products', component: ProductsComponent},
   {path: 'statistics', component: StatisticsComponent},
   {path: 'coupens', component: CoupensComponent},
   {path: 'pages', component: PagesComponent},
   {path: 'media', component: MediaComponent},
-  {path: 'settings', component: SettingsComponent}
+  {path: 'settings', component: SettingsComponent},
+  {path: 'productDetail' , component: ProductDeatailComponent},
+  {path: '**', redirectTo: 'dashboard', pathMatch: 'full'}, 
 ];
 
 
