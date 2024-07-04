@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +19,6 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import {  ReactiveFormsModule } from '@angular/forms';
 import { CardComponent } from './components/card/card.component';
-import { ProductDeatailComponent } from './components/product-deatail/product-deatail.component';
 import { FormNewProductComponent } from './components/form-new-product/form-new-product.component';
 // import { ProductDetailComponent } from './product-detail/product-detail.component';
 // import { CardFilterComponent } from './components/card-filter/card-filter.component';
@@ -33,6 +33,7 @@ import { CouponsDeleteComponent } from './components/coupons-delete/coupons-dele
 import { FooterComponent } from './footer/footer.component';
 import { HomeBannerComponent } from './home-banner/home-banner.component';
 import { CartComponent } from './components/cart/cart.component';
+
 
 
 
@@ -56,7 +57,7 @@ import { CartComponent } from './components/cart/cart.component';
     LoginComponent,
     RegisterComponent,
     CardComponent,
-    ProductDeatailComponent,
+    //ProductDeatailComponent,
     CardFilterComponent,
     EditformComponent,
     EditformstableComponent,
@@ -70,11 +71,13 @@ import { CartComponent } from './components/cart/cart.component';
     // CardFilterComponent,
     // ProductDetailComponent,
   ],
+
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule
 
     
   ],

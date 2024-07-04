@@ -9,7 +9,7 @@ import { AccountComponent } from './pages.nav/account/account.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { CardComponent } from './components/card/card.component';
-import { ProductDeatailComponent } from './components/product-deatail/product-deatail.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { FormsComponent } from './pages.nav/forms/forms.component';
 import { EditformComponent } from './components/editforms/editform/editform.component';
 import { FormNewProductComponent } from './components/form-new-product/form-new-product.component';
@@ -25,9 +25,9 @@ const routes: Routes = [
 
   
   {path: 'dashboard', component: DashboardComponent},
-  {path: 'dashboard/productDetail/:id', component: ProductDeatailComponent},
+  {path: 'dashboard/productDetail/:id', component: ProductDetailComponent},
   {path: 'products', component: ProductsComponent},
-  {path: 'products/productDetail/:id', component: ProductDeatailComponent},
+  {path: 'products/productDetail/:id', component: ProductDetailComponent},
   {path: 'statistics', component: StatisticsComponent},
   {path: 'pages', component: PagesComponent},
   {path: 'media', component: MediaComponent},
@@ -43,7 +43,7 @@ const routes: Routes = [
   {path: 'editform', component: EditformComponent},
   {path: 'editformlist', component: EditformstableComponent},
   {path: 'editformlist/editform/:id', component: EditformComponent},
-  {path: 'dashboard/productDetail/:id', component: ProductDeatailComponent},
+  {path: 'dashboard/productDetail/:id', component: ProductDetailComponent},
   {path: 'dashboard/forNewProduct', component: FormNewProductComponent},
   {path: '**', redirectTo: 'dashboard', pathMatch: 'full'},
   

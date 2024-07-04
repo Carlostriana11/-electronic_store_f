@@ -1,0 +1,17 @@
+<div *ngIf="cartItems.length > 0">
+    <h2>Carrito de Compras</h2>
+    <ul>
+      <li *ngFor="let item of cartItems; let i = index">
+        <span>{{ item.name }} - {{ item.price }} x {{ item.quantity }}</span>
+        <button (click)="removeFromCart(i)">Eliminar</button>
+        <input type="number" [(ngModel)]="item.quantity" (change)="updateQuantity(i)">
+      </li>
+    </ul>
+    <p>Total: {{ cartTotal }}</p>
+    <button>Finalizar Compra</button>
+  </div>
+  
+  <div *ngIf="cartItems.length === 0">
+    <p>El carrito está vacío.</p>
+  </div>
+  
