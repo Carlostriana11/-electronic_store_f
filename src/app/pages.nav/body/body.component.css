@@ -5,7 +5,7 @@
     z-index: 0;
     position: relative;
     top: 0;
-    transition: all .9s ease;
+    /* transition: all .9s ease; */
     background: #f4f7fa;
     /* background-color: black; */
     /* background: url("https://img.freepik.com/vector-gratis/fondo-pantalla-perspectiva-linea-sintetizador-retro-moda-efecto-humo_1017-43048.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1718755200&semt=sph")no-repeat; */
