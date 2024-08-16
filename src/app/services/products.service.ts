@@ -6,7 +6,11 @@ import { Injectable } from "@angular/core";
 })
 
 export class  ProductsServices {
+<<<<<<< HEAD
     private url:any = "http://52.14.34.161:4000/api"
+=======
+    private url:any = "http://18.117.131.41:4000/api"
+>>>>>>> 441b535bcba30f017125bcd4e1c737deb582c0f6
     constructor( private http:HttpClient ) {}
 
     getProducts(){
