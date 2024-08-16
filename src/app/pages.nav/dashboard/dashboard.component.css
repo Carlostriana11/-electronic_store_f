@@ -8,3 +8,9 @@
     padding: 2rem;
     font-size: 4rem;
 }
+@media (min-witdh: 550px){
+    .title{
+        padding: 0rem;
+        font-size: 3rem;
+    }
+}

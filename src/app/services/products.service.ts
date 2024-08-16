@@ -6,7 +6,7 @@ import { Injectable } from "@angular/core";
 })
 
 export class  ProductsServices {
-    private url:any = "http://18.117.131.41:4000/api"
+    private url:any = "http://52.14.34.161:4000/api"
     constructor( private http:HttpClient ) {}
 
     getProducts(){
@@ -17,18 +17,18 @@ export class  ProductsServices {
     }
 
     UpdateProductById(id:string, newProduct:any){
-        return this.http.patch<any>(`http://localhost:4000/api/products/${ id }`, newProduct)
+        return this.http.patch<any>(`${this.url}/api/products/${ id }`, newProduct)
     }
 
     createProduct(newProduct:any){
-        return this.http.post<any>('http://localhost:4000/api/products', newProduct)
+        return this.http.post<any>(`${this.url}/api/products`, newProduct)
     }
     getCategories() {
-        return this.http.get<any>('http://localhost:4000/api/categorys'  );
+        return this.http.get<any>(`${this.url}/categorys`);
     }
     
     deleteProductById(id: string) {
-        return this.http.delete<any>(`http://localhost:4000/api/products/${id}`);
+        return this.http.delete<any>(`${this.url}/api/products/${id}`);
     }
 }
 

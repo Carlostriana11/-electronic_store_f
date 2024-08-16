@@ -11,12 +11,12 @@ export class AuthService {
   private authData!:any
   private userSubject = new BehaviorSubject<any>(null);
   user$ = this.userSubject.asObservable();
-
+  private url:any = "http://52.14.34.161:4000/api"
   constructor(private http:HttpClient, private router: Router) {}
 
 
   postLogin( newProduct:any){
-    return this.http.post<any>('http://localhost:4000/api/auth/login', newProduct)
+    return this.http.post<any>(`${this.url}/auth/login`, newProduct)
 
     .pipe(
       tap( (response: any)=>{
@@ -50,7 +50,7 @@ export class AuthService {
 
 
   postRegister( newRegister:any){
-    return this.http.post<any>('http://localhost:4000/api/auth/register', newRegister)
+    return this.http.post<any>(`${this.url}/auth/register`, newRegister)
 
     .pipe(
       tap( (response: any)=>{
@@ -83,7 +83,7 @@ export class AuthService {
     const headers = new HttpHeaders().set( 'X-Token', token );
 
 
-    return this.http.get<any>('http://localhost:4000/api/auth/renew-token', {headers})
+    return this.http.get<any>(`${this.url}/auth/renew-token`, {headers})
     
     .pipe(
       tap( data=> {
